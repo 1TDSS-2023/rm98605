@@ -112,3 +112,15 @@ html{
 body{
     font-size: 10px;
 }
+
+
+
+
+/*BREKPOINTS*/
+
+@media (max-width:1500px){
+
+    body{
+        background-color: aqua;
+    }
+}
