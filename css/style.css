@@ -58,7 +58,7 @@ html{
 .conteudo {
     display: flex;
     flex-wrap: wrap;
-    max-width: 80vw;
+    max-width: 60vw;
     margin: 0 auto;
 }
 
@@ -70,7 +70,7 @@ html{
 
 .tit-sec{
     text-align: center;
-    margin: 2% 0;
+    margin: 2vh 0;
     flex-grow: 1;
     font-size: 3rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -79,7 +79,7 @@ html{
 .rodape{
     display: flex;
     justify-content: space-around;
-    margin: 5% 0 0 0;
+    margin: 5vh 0 0 0;
 }
 
 .rodape h2{
@@ -91,15 +91,16 @@ html{
 .rodape nav{
     flex-grow: 6;
     display: flex;   
-    width: 6vw;
-    height: 3vh;
+    width: 80vw;
+    height: 10vh;
     align-items: center;
+    background-color: #d9d9d9;
 }
 
 .rodape img{
     display: block;
-    width: 3vw;
-    max-width: 3vh;
+    width: 9%;
+    max-width: 9%;
     margin: 0 auto;
 }
 
@@ -120,7 +121,5 @@ body{
 
 @media (max-width:1500px){
 
-    body{
-        background-color: aqua;
-    }
+    
 }
