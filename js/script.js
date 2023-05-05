@@ -36,24 +36,24 @@
 //     this.setAttribute("style", `background-color: rgb(${r},${g},${b})`)
 // })
 
-let frutas = ["banana", "maça", "laranja", "morango", "uva", "amora", "cereja", "abacaxi"];
+//let frutas = ["banana", "maça", "laranja", "morango", "uva", "amora", "cereja", "abacaxi"];
 
-console.log(frutas);
-console.log(frutas[3]);
+//console.log(frutas);
+//console.log(frutas[3]);
 
-console.log(frutas.length);
+//console.log(frutas.length);
 
 //Insirindo dado no final do array
-console.log(frutas.push("pêssego"));
+//console.log(frutas.push("pêssego"));
 
 //Insirindo dado no inicio do array
-console.log(frutas.unshift("kiwi"));
+//console.log(frutas.unshift("kiwi"));
 
 //remove o ultimo dado do array
-console.log(frutas.pop());
+//console.log(frutas.pop());
 
 //remove o primeiro dado do array
-console.log(frutas.shift());
+//console.log(frutas.shift());
 
 //localizando um item no array com o método indexOf
 
@@ -80,27 +80,39 @@ console.log(frutas.shift());
 //     console.log("Posição: "+ index + " - Fruta: " + fruta)
 // })
 
-let nr1 = [1,2,3,4,5];
-let nr2 = [6,7,8,9,10];
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10];
 
-console.log(nr1);
-console.log(nr2);
+// console.log(nr1);
+// console.log(nr2);
 // console.log(nr1.concat(nr2));
 
 //concatenando arrays em um novo array
-let nr3 = [...nr1,...nr2];
+// let nr3 = [...nr1,...nr2];
 
-console.log("Novo array: " + nr3);
+// console.log("Novo array: " + nr3);
 
-nr3.forEach((num)=>{
-    // num.forEach((n)=>{
-        console.log("num: " + num)
-    // })
+// nr3.forEach((num)=>{
+//     // num.forEach((n)=>{
+//         console.log("num: " + num)
+//     // })
+// })
+
+// const imgElements = [...document.getElementsByTagName("img")];
+// const imgElementsArray = [...imgElements]
+
+// imgElements.forEach((img)=>{
+//     img.setAttribute("width", "10%");
+// });
+
+const elements = [...document.querySelectorAll(".teste")];
+console.log(elements);
+
+elements.forEach((el)=>{
+    if(el.tagName.toLowerCase() == "img"){
+        console.log(el);
+    }
 })
-
-
-
-
 
 
 
