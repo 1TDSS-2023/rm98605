@@ -15,12 +15,15 @@ inputSenha.addEventListener("keyup", ()=>{ if(inputSenha.value.length < 5){
 
 inputUser.addEventListener("keyup",()=>{ if(inputUser.value.length < 5){ inputUser.setAttribute("style", "outline-color: red;"); userLabel.setAttribute("style", "color: red;"); }else{ inputUser.setAttribute("style", "outline-color: green;"); userLabel.setAttribute("style", "color: green;"); } }); 
 
-const eyePass = document.querySelector(".fa-eye"); 
+const eyePass = document.querySelector(".fa");
+
 eyePass.addEventListener("click", ()=>{ 
     if(inputSenha.getAttribute("type") == "password"){
         inputSenha.setAttribute("type", "text");
+        eyePass.setAttribute("class", "fa fa-eye-slash")
     }else{
         inputSenha.setAttribute("type", "password");
+        eyePass.setAttribute("class", "fa fa-eye-slash")
     }
 
 });
